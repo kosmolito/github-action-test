@@ -1,10 +1,8 @@
-from flask import Flask
+import datetime
 
-app = Flask(__name__)
+def main():
+    print("Hello, GitHub Actions!")
+    print(f"Current date and time: {datetime.datetime.now()}")
 
-@app.route('/')
-def hello():
-    return 'Hello, World!'
-
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    main()
